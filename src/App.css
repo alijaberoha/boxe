@@ -1,0 +1,12 @@
+body{
+  background-image: url("../public/img/aren_gif.gif");
+  background-repeat: no-repeat;
+  background-size:100%; /* optionnel, pour agrandir/réduire l’image */
+  }
+  h1{
+    display: flex;
+    justify-content: center;
+  }
+  span{
+    color: rgb(235, 6, 6);
+  }

@@ -1,0 +1,19 @@
+.Cell{
+display: flex;
+justify-content: center;
+
+}
+.Cell img{
+width: 350px;
+
+}
+.btn img{
+    width: 100px;
+    
+}
+.fond {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 80px;
+    
+}
