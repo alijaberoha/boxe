@@ -2,6 +2,7 @@ import './victime.css';
 import { useState, useRef } from 'react';
 import Freezer from '../../public/img/R.png'
 import Goku from '../../public/img/kameh.jpg'
+import Sound from '../../public/Energy Ball Impact DBZ Sound Effect.mp3'
 
 export default function Victime({ onImageClick }) {
   const [rotate, setRotate] = useState(false);
@@ -42,7 +43,7 @@ export default function Victime({ onImageClick }) {
         </div>
 
       
-        <audio ref={audioRef} src="public/Energy Ball Impact DBZ Sound Effect.mp3" />
+        <audio ref={audioRef} src={Sound} />
       </div>
     </>
   );
