@@ -3,7 +3,7 @@ import { useState, useRef } from 'react';
 
 export default function Victime({ onImageClick }) {
   const [rotate, setRotate] = useState(false);
-  const audioRef = useRef(null); // pour contrôler le son
+  const audioRef = useRef(null); 
 
   const handleClick = () => {
     setRotate(true);
@@ -24,7 +24,7 @@ export default function Victime({ onImageClick }) {
       <div className='fond'>
         <div className='Cell'>
           <img
-            src="public/img/R.png"
+            src="./public/img/R.png"
             alt="freezer"
             style={{
               transform: rotate ? 'rotate(20deg)' : 'rotate(-20deg)', 
@@ -35,7 +35,7 @@ export default function Victime({ onImageClick }) {
         </div>
         <div className='btn' onClick={handleClick}>
           <button>
-            <img src="public/img/kameh.jpg" alt="bouton attaque" />
+            <img src="./public/img/kameh.jpg" alt="bouton attaque" />
           </button>
         </div>
 
