@@ -1,5 +1,7 @@
 import './victime.css';
 import { useState, useRef } from 'react';
+import Freezer from '../../public/img/R.png'
+import Goku from '../../public/img/kameh.jpg'
 
 export default function Victime({ onImageClick }) {
   const [rotate, setRotate] = useState(false);
@@ -24,7 +26,7 @@ export default function Victime({ onImageClick }) {
       <div className='fond'>
         <div className='Cell'>
           <img
-            src="./public/img/R.png"
+            src={Freezer}
             alt="freezer"
             style={{
               transform: rotate ? 'rotate(20deg)' : 'rotate(-20deg)', 
@@ -35,7 +37,7 @@ export default function Victime({ onImageClick }) {
         </div>
         <div className='btn' onClick={handleClick}>
           <button>
-            <img src="./public/img/kameh.jpg" alt="bouton attaque" />
+            <img src={Goku} alt="bouton attaque" />
           </button>
         </div>
 
